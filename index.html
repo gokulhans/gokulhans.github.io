@@ -1,91 +1,589 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Your description" />
+  <meta name="author" content="Your name" />
+
+  <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+  <meta property="og:site_name" content="" />
+  <!-- website name -->
+  <meta property="og:site" content="" />
+  <!-- website link -->
+  <meta property="og:title" content="" />
+  <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="" />
+  <!-- description shown in the actual shared post -->
+  <meta property="og:image" content="" />
+  <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" />
+  <!-- where do you want your post to link to -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- to have large image post format in Twitter -->
+
+  <!-- Webpage Title -->
+  <title>Gokul Hans</title>
+
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+    rel="stylesheet" />
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/fontawesome-all.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- Favicon  -->
+  <link rel="icon" href="" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <!-- Image Logo -->
+      <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>   -->
 
-<!-- navbar -->
-<nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-  <div class="container flex flex-wrap items-center justify-between mx-auto">
-  <a href="https://flowbite.com/" class="flex items-center">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-  </a>
-  <div class="flex md:order-2">
-      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
-  </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-      </li>
-    </ul>
-  </div>
-  </div>
-</nav>
+      <!-- Text Logo - Use this if you don't have a graphic logo -->
+      <a class="navbar-brand logo-text page-scroll" href="index.html">Gokul Hans</a>
 
-<!-- timeline -->
+      <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<ol class="relative border-l border-gray-200 dark:border-gray-700">                  
-  <li class="mb-10 ml-4">
-      <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-      <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-  </li>
-  <li class="mb-10 ml-4">
-      <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-      <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-  </li>
-  <li class="ml-4">
-      <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-      <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-      <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-  </li>
-</ol>
-
-<!-- user riview quote -->
-
-<figure class="mx-auto max-w-screen-md text-center">
-  <svg aria-hidden="true" class="mx-auto mb-3 w-12 h-12 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
-  <blockquote>
-      <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
-  </blockquote>
-  <figcaption class="flex justify-center items-center mt-6 space-x-3">
-      <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
-      <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-          <cite class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</cite>
-          <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</cite>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <span class="nav-item social-icons">
+          <span class="fa-stack">
+            <a href="#your-link">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-facebook-f fa-stack-1x"></i>
+            </a>
+          </span>
+          <span class="fa-stack">
+            <a href="#your-link">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-twitter fa-stack-1x"></i>
+            </a>
+          </span>
+        </span>
       </div>
-  </figcaption>
-</figure>
+      <!-- end of navbar-collapse -->
+    </div>
+    <!-- end of container -->
+  </nav>
+  <!-- end of navbar -->
+  <!-- end of navigation -->
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="text-container">
+            <h1 class="h1-large">
+              Hii there
+              <br>
+              Iam Gokul Hans
+              <br>
+              <h5
+                style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                I love to create beautiful and efficient websites</h5>
+            </h1>
+            <a class="btn-solid-lg page-scroll" target="_blank" href="resume.pdf">Resume</a>
+            <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+          </div>
+          <!-- end of text-container -->
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container -->
+  </header>
+  <!-- end of header -->
+  <!-- end of header -->
+
+  <!-- About-->
+  <div id="about" class="basic-1 bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="text-container first">
+            <h2>Hi there I'm Gokul Hans</h2>
+            <p>
+              And I love to create beautiful and efficient websites for my
+              customers. I love going through the entire process with the
+              customer from concept, to design and then development and launch
+            </p>
+          </div>
+          <!-- end of text-container -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <div class="text-container second">
+            <div class="time">2021 - PRESENT</div>
+            <h6>Pursuing BCA @ CAS KOZHIKODE</h6>
+            <p>Working happily on my own web projects</p>
+            <div class="time">2019 - 2021</div>
+            <h6>+2 Life</h6>
+            <p>@ REC GHSS</p>
+          </div>
+          <!-- end of text-container -->
+        </div>
+
+        <!-- end of col -->
+
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of basic-1 -->
+  <!-- end of about -->
+
+  <!-- Services -->
+  <div id="services" class="basic-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="h2-heading">Skills Aspired</h2>
+          <p class="p-heading">
+            Web design and development have been my bread and butter for more
+            than 2 years. During that time I've discovered that I can help
+            startups and companies with the following services
+          </p>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i class="far fa-gem"></i>
+            <h4>DESIGN</h4>
+            <p>
+              Successful online projects start with good design. It
+              establishes a solid foundation for future development and allows
+              for long term growth
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i class="fas fa-code"></i>
+            <h4>DEVELOPMENT</h4>
+            <p>
+              I can code my own designs or even use the customer's design as
+              base. My focus is to generate clean code that's well structured
+              for reliability
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i class="fas fa-tv"></i>
+            <h4>BASIC SEO</h4>
+            <p>
+              i can setup your project to use basic SEO principles which will
+              push your project to the first page on search engines and save
+              you ads money
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+        <!-- end of col -->
 
 
-  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i style="font-size: 5em; color: rgb(241, 199, 11);" class="fab fa-html5"></i>
+            <h4>HTML</h4>
+            <p>
+              i can setup your project to use basic SEO principles which will
+              push your project to the first page on search engines and save
+              you ads money
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i style="font-size: 5em; color: rgb(182, 11, 168);" class="fab fa-css3-alt"></i>
+            <h4>CSS</h4>
+            <p>
+              i can setup your project to use basic SEO principles which will
+              push your project to the first page on search engines and save
+              you ads money
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i style="font-size: 5em; color: rgb(228, 158, 8);" class="fab fa-js"></i>
+            <h4>JS</h4>
+            <p>
+              i can setup your project to use basic SEO principles which will
+              push your project to the first page on search engines and save
+              you ads money
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i style="font-size: 5em; color: rgb(68, 48, 180);" class="fab fa-bootstrap"></i>
+            <h4>Bootstrap</h4>
+            <p>
+              Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular
+              front-end open source toolkit
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i style="font-size: 5em; color: Mediumslateblue;" class="fab fa-react"></i>
+            <h4>REACT JS</h4>
+            <p>
+              React is a free and open-source front-end JavaScript library for building user interfaces based on UI
+              components
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <div class="text-box">
+            <i style="font-size: 5em; color: rgb(36, 180, 79);" class="fab fa-node"></i>
+            <h4>NODE JS</h4>
+            <p>
+              Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+              engine
+            </p>
+          </div>
+          <!-- end of text-box -->
+        </div>
+        <!-- end of col -->
 
 
+
+
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of basic-2 -->
+  <!-- end of services -->
+
+  <!-- Works -->
+  <div class="basic-2">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="h2-heading">Own Projects</h2>
+        <p class="p-heading">
+          Web design and development have been my bread and butter for more
+          than 2 years. During that time I've discovered that I can help
+          startups and companies with the following services
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="basedit basic-2">
+    <div class="container">
+
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://gokulhans.github.io/Portfolio/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://gokulhans.github.io/Portfolio/" target="_blank">
+            <h4>PortFolio Website </h4>
+          </a>
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://fasinoshop.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://fasinoshop.herokuapp.com/" target="_blank">
+            <h4>Ecommerce Website </h4>
+          </a>
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://liveandletlive.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://liveandletlive.herokuapp.com/" target="_blank">
+            <h4>Blogging Site </h4>
+          </a>
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://gbrozbot.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://gbrozbot.herokuapp.com/" target="_blank">
+            <h4>Wiki Bot  </h4>
+          </a>
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://leagueofseries.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://leagueofseries.herokuapp.com/" target="_blank">
+            <h4>Series fan Blogging  </h4>
+          </a>
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://studocu.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://studocu.herokuapp.com/" target="_blank">
+            <h4>Studocu , innovation for learners  </h4>
+          </a>
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://college-help.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://college-help.herokuapp.com/" target="_blank">
+            <h4>Calicut University  </h4>
+          </a>
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8
+            engine
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://lyricsworld.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://lyricsworld.herokuapp.com/" target="_blank">
+            <h4> Lyrics World  </h4>
+          </a>
+          <p>
+           Enjoy musics with lyrics. add your own.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="text-box">
+          <iframe src="https://matrixa.herokuapp.com/" scrolling="no" height="250px" width="100%"
+          title="W3Schools Free Online Web Tutorials"></iframe>
+          <a href="https://matrixa.herokuapp.com/" target="_blank">
+            <h4>Matrixa , A new way to remeber things  </h4>
+          </a>
+          <p>
+           Notes app. write things to save your memory.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- Section Divider -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <hr class="section-divider" />
+      </div>
+      <!-- end of col -->
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
+  <!-- end of section divider -->
+
+  <!-- <div class="row">
+  <div class="col-lg-4">
+    <div class="text-box">
+      <i style="font-size: 5em;" class="fab fa-bootstrap"></i>
+      <h4>Bootstrap</h4>
+    </div>
+  </div>
+ 
+</div> -->
+
+
+  <!-- Questions -->
+  <div class="accordion-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="h2-heading">Frequent questions</h2>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How can I contact you and quickly get a quote for my online
+                  project?
+                </button>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  The best way to reach me is through the contact form of by
+                  messaging me on my social media accounts. For a fast quote
+                  make sure your provide many project details
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of accordion -->
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of accordion-1 -->
+  <!-- end of questions -->
+
+  <!-- Footer -->
+  <div class="footer bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="social-container">
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+              </a>
+            </span>
+            <span class="fa-stack">
+              <a href="#your-link">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x"></i>
+              </a>
+            </span>
+          </div>
+          <!-- end of social-container -->
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of footer -->
+  <!-- end of footer -->
+
+  <!-- Copyright -->
+  <div class="copyright bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="p-small">
+            Copyright © <a class="no-line" href="#your-link">Your name</a>
+          </p>
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- enf of row -->
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of copyright -->
+  <!-- end of copyright -->
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap framework -->
+  <script src="js/jquery.easing.min.js"></script>
+  <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="js/scripts.js"></script>
+  <!-- Custom scripts -->
 </body>
 
 </html>
